@@ -56,3 +56,7 @@
 2020-11-14 21:51:57.311 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
 2020-11-14 21:51:58.791 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
 2020-11-14 21:51:58.822 [main] INFO  com.soft1851.user.Application - Started Application in 8.502 seconds (JVM running for 9.747)
+2020-11-14 21:52:33.784 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-14 21:52:33.784 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-14 21:52:33.797 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2020-11-14 21:52:33.837 [http-nio-8003-exec-1] INFO  c.s.user.controller.HelloController - a
