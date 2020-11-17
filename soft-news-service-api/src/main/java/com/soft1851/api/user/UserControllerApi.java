@@ -43,4 +43,13 @@ public interface UserControllerApi {
     GraceResult updateUserInfo(@RequestBody @Valid UpdateUserInfoBO updateUserInfoBO,
                                BindingResult result);
 
+    /**
+     * 获得用户基础信息
+     * @param userId
+     * @return GraceResult
+     */
+    @PostMapping("/userBasicInfo")
+    @ApiOperation(value = "获得用户基础信息",notes = "获得用户基础信息",httpMethod = "POST")
+    GraceResult getUserBasicInfo(@RequestParam String userId);
+
 }
