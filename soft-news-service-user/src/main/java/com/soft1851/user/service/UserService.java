@@ -1,6 +1,7 @@
 package com.soft1851.user.service;
 
 import com.soft1851.pojo.AppUser;
+import com.soft1851.pojo.bo.UpdateUserInfoBO;
 
 public interface UserService {
 
@@ -24,4 +25,10 @@ public interface UserService {
      * @return
      */
     public AppUser getUser(String userId);
+
+    /**
+     * 更新用户信息
+     * @param updateUserInfoBO
+     */
+    void updateUserInfo(UpdateUserInfoBO updateUserInfoBO);
 }

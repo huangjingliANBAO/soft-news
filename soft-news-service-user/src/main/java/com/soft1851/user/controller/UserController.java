@@ -3,6 +3,7 @@ package com.soft1851.user.controller;
 import com.soft1851.api.BaseController;
 import com.soft1851.api.user.UserControllerApi;
 import com.soft1851.pojo.AppUser;
+import com.soft1851.pojo.bo.UpdateUserInfoBO;
 import com.soft1851.pojo.vo.UserAccountInfoVo;
 import com.soft1851.result.GraceResult;
 import com.soft1851.result.ResponseStatusEnum;
@@ -13,10 +14,13 @@ import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RestController;
 import tk.mybatis.mapper.entity.Example;
 
 import javax.annotation.Resource;
+import javax.validation.Valid;
+import java.util.Map;
 
 @RestController
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
@@ -51,6 +55,19 @@ public class UserController extends BaseController implements UserControllerApi 
         BeanUtils.copyProperties(user, accountVo);
         return GraceResult.ok(accountVo);
     }
+
+    @Override
+    public GraceResult updateUserInfo(@Valid UpdateUserInfoBO updateUserInfoBO, BindingResult result) {
+        // 判断BindingResult是否保存错误的验证信息，如果有 直接return
+        if (result.hasErrors()) {
+            Map<String, String> errorMap = getErrors(result);
+            return GraceResult.errorMap(errorMap);
+        }
+        // 执行更新用户信息操作
+        userService.updateUserInfo(updateUserInfoBO);
+        return GraceResult.ok();
+    }
+
     private AppUser getUser(String userId) {
         // 1 查询redis中是否包含用户信息，如果包含侧查询redis返回，如果不包含侧查询数据库
         String userJson = redis.get(REDIS_USER_INFO + ":" + userId);
