@@ -66,25 +66,25 @@ public class AppUser {
     /**
      * 用户状态：0：未激活。 1：已激活：基本信息是否完善，真实姓名，邮箱地址，性别，生日，住址等，如果没有完善，则用户不能在作家中心操作，不能关注。2：已冻结。
      */
-    @Column(name = "active_status")
+   // @Column(name = "active_status")
     private Integer activeStatus;
 
     /**
      * 累计已结算的收入金额，也就是已经打款的金额，每次打款后再此累加
      */
-    @Column(name = "total_income")
+    //@Column(name = "total_income")
     private Integer totalIncome;
 
     /**
      * 创建时间 创建时间
      */
-    @Column(name = "created_time")
+   // @Column(name = "created_time")
     private Date createdTime;
 
     /**
      * 更新时间 更新时间
      */
-    @Column(name = "updated_time")
+   // @Column(name = "updated_time")
     private Date updatedTime;
 
     /**

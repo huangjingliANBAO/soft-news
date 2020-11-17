@@ -60,4 +60,9 @@ public class UserServiceimpl implements UserService {
         appUserMapper.insert(user);
         return user;
     }
+
+    @Override
+    public AppUser getUser(String userId) {
+        return appUserMapper.selectByPrimaryKey(userId);
+    }
 }
