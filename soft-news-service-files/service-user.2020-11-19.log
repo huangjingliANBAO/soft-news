@@ -31,3 +31,138 @@ Action:
 
 Consider defining a bean of type 'com.soft1851.utils.extend.AliyunResource' in your configuration.
 
+2020-11-19 22:58:37.607 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-19 22:58:38.030 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-19 22:58:39.465 [main] INFO  com.soft1851.files.Application - The following profiles are active: dev
+2020-11-19 22:58:40.081 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-19 22:58:40.083 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-19 22:58:40.105 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-11-19 22:58:40.279 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5ca2b845-0b6b-3081-b42d-5b2eaf65ad1d
+2020-11-19 22:58:40.577 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2020-11-19 22:58:40.586 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2020-11-19 22:58:40.587 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-19 22:58:40.587 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-19 22:58:40.706 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-19 22:58:40.706 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1227 ms
+2020-11-19 22:58:40.796 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fileUploadController' defined in file [E:\dev\soft-news\soft-news-service-files\target\classes\com\soft1851\files\controller\FileUploadController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'uploadServiceImpl' defined in file [E:\dev\soft-news\soft-news-service-files\target\classes\com\soft1851\files\service\impl\UploadServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.utils.extend.AliyunResource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-11-19 22:58:40.797 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-19 22:58:40.811 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-19 22:58:40.955 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.soft1851.files.service.impl.UploadServiceImpl required a bean of type 'com.soft1851.utils.extend.AliyunResource' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.utils.extend.AliyunResource' in your configuration.
+
+2020-11-19 23:04:19.167 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-19 23:04:19.566 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-19 23:04:21.047 [main] INFO  com.soft1851.files.Application - The following profiles are active: dev
+2020-11-19 23:04:21.598 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-19 23:04:21.600 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-19 23:04:21.622 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-11-19 23:04:21.792 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5ca2b845-0b6b-3081-b42d-5b2eaf65ad1d
+2020-11-19 23:04:22.103 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2020-11-19 23:04:22.112 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2020-11-19 23:04:22.113 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-19 23:04:22.114 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-19 23:04:22.231 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-19 23:04:22.231 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1171 ms
+2020-11-19 23:04:22.320 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fileUploadController' defined in file [E:\dev\soft-news\soft-news-service-files\target\classes\com\soft1851\files\controller\FileUploadController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'uploadServiceImpl' defined in file [E:\dev\soft-news\soft-news-service-files\target\classes\com\soft1851\files\service\impl\UploadServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.utils.extend.AliyunResource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-11-19 23:04:22.322 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-19 23:04:22.335 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-19 23:04:22.476 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.soft1851.files.service.impl.UploadServiceImpl required a bean of type 'com.soft1851.utils.extend.AliyunResource' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.utils.extend.AliyunResource' in your configuration.
+
+2020-11-19 23:08:08.826 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-19 23:08:09.258 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-19 23:08:10.667 [main] INFO  com.soft1851.files.Application - The following profiles are active: dev
+2020-11-19 23:08:11.231 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-19 23:08:11.233 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-19 23:08:11.256 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2020-11-19 23:08:11.429 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5ca2b845-0b6b-3081-b42d-5b2eaf65ad1d
+2020-11-19 23:08:11.704 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2020-11-19 23:08:11.716 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2020-11-19 23:08:11.718 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-19 23:08:11.718 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-19 23:08:11.889 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-19 23:08:11.889 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1208 ms
+2020-11-19 23:08:12.022 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fileUploadController' defined in file [E:\dev\soft-news\soft-news-service-files\target\classes\com\soft1851\files\controller\FileUploadController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'uploadServiceImpl' defined in file [E:\dev\soft-news\soft-news-service-files\target\classes\com\soft1851\files\service\impl\UploadServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.utils.extend.AliyunResource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-11-19 23:08:12.025 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-19 23:08:12.042 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-19 23:08:12.278 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.soft1851.files.service.impl.UploadServiceImpl required a bean of type 'com.soft1851.utils.extend.AliyunResource' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.utils.extend.AliyunResource' in your configuration.
+
+2020-11-19 23:08:31.924 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-19 23:08:32.302 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-19 23:08:33.806 [main] INFO  com.soft1851.files.Application - The following profiles are active: dev
+2020-11-19 23:08:34.534 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-19 23:08:34.536 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-19 23:08:34.559 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2020-11-19 23:08:34.766 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=77207536-2f69-3e1d-a7b8-6b2fabf71ef6
+2020-11-19 23:08:35.156 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2020-11-19 23:08:35.165 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2020-11-19 23:08:35.165 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-19 23:08:35.165 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-19 23:08:35.304 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-19 23:08:35.304 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1484 ms
+2020-11-19 23:08:36.199 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-19 23:08:36.199 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-19 23:08:36.203 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-19 23:08:36.203 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-19 23:08:36.336 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-19 23:08:37.897 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-11-19 23:08:38.115 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8004"]
+2020-11-19 23:08:38.139 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8004 (http) with context path ''
+2020-11-19 23:08:39.428 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-11-19 23:08:39.443 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-19 23:08:39.456 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-19 23:08:39.467 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-19 23:08:39.613 [main] INFO  com.soft1851.files.Application - Started Application in 9.655 seconds (JVM running for 10.545)
+2020-11-19 23:12:47.047 [http-nio-8004-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-19 23:12:47.049 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-19 23:12:47.061 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2020-11-19 23:12:47.136 [http-nio-8004-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadFds====
+2020-11-19 23:12:47.750 [http-nio-8004-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时:614
+2020-11-19 23:12:47.750 [http-nio-8004-exec-1] INFO  c.s.f.c.FileUploadController - path=group1/M00/00/00/J2H8PF-2i1WABZZTAAAtkfI_zVo911.jpg
+2020-11-19 23:14:39.468 [http-nio-8004-exec-8] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-19 23:14:40.231 [http-nio-8004-exec-8] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时:762
+2020-11-19 23:14:40.231 [http-nio-8004-exec-8] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-19 23:14:40.421 [http-nio-8004-exec-8] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时:190
