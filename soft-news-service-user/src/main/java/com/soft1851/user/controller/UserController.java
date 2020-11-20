@@ -1,7 +1,7 @@
 package com.soft1851.user.controller;
 
 import com.soft1851.api.BaseController;
-import com.soft1851.api.user.UserControllerApi;
+import com.soft1851.api.controller.user.UserControllerApi;
 import com.soft1851.pojo.AppUser;
 import com.soft1851.pojo.bo.UpdateUserInfoBO;
 import com.soft1851.pojo.vo.AppUserVO;
@@ -17,9 +17,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RestController;
-import tk.mybatis.mapper.entity.Example;
 
-import javax.annotation.Resource;
 import javax.validation.Valid;
 import java.util.Map;
 

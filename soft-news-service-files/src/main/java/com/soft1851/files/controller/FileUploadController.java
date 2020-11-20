@@ -1,7 +1,7 @@
 package com.soft1851.files.controller;
 
 
-import com.soft1851.api.file.FileUploadControllerApi;
+import com.soft1851.api.controller.file.FileUploadControllerApi;
 import com.soft1851.files.resource.FileResource;
 import com.soft1851.files.service.UploadService;
 import com.soft1851.result.GraceResult;

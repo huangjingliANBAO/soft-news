@@ -1,4 +1,4 @@
-package com.soft1851.api.user;
+package com.soft1851.api.controller.user;
 
 import com.soft1851.pojo.bo.RegistLoginBO;
 import com.soft1851.result.GraceResult;
